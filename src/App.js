@@ -1,34 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
-import About from './About';
-import Header from './Header';
-import Projects from './Projects';
-import Navigation from './Navigation';
-import Contact from './Contact';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import About from "./components/About/About.js";
+import Projects from "./components/Projects/Projects.js";
+import Navigation from "./components/Navigation/Navigation.js";
+import ContactForm from "./components/Contact/Contact.js";
+import Footer from "./components/Footer/Footer.js";
 
 function App() {
-  return (
-    <div className="App">
-      <div>Navigation</div>
-      <div>Header</div>
-      <div>Projects</div>
-      <div>Contact</div>
-      <div>Footer</div>
+  const [categories] = useState([
+    { name: "projects" },
+    { name: "contact" },
+    { name: "about me" },
+  ]);
 
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+  const [currentCategory, setCurrentCategory] = useState(categories[0]);
+
+  return (
+    <div className="container">
+      <Navigation
+        categories={categories}
+        setCurrentCategory={setCurrentCategory}
+        currentCategory={currentCategory}
+      />
+      <main>
+        {currentCategory.name === "about me" && <About />}
+        {currentCategory.name === "contact" && <ContactForm />}
+        {currentCategory.name === "projects" && <Projects />}
         
-        </a>
-      </header>
+      </main>
+      <Footer />
     </div>
   );
 }

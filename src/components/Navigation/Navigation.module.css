@@ -1,0 +1,29 @@
+.Navigation {
+    background: #181818;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    opacity: 0.9;
+    display: flex;
+    justify-content:center;
+}
+.Navigation nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.Navigation ul li {
+    display: inline-block;
+    margin: 20px;
+}
+
+.Navigation ul li a {
+    text-decoration: none;
+    color: white;
+}
+.Navigation a:hover {
+    border-bottom: 5px solid #8c1d8c
+}
+
