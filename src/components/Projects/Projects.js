@@ -1,12 +1,14 @@
 
 
 import React from 'react';
-import horiseonImg from '../../assets/Horiseon.png';
-import budgetImg from 'src\assets\Budget-App.png';
-import quizImg from 'src\assets\Code-Quiz.png';
-import pizzaImg from 'src\assets\Pizza-Hunt.png'
 
-import WorkItems from 'src\components\Workitems\Workitems.js';
+import horiseonImg from '../../images/Horiseon.png';
+import budgetImg from '../../images/Budget-App.png';
+import quizImg from '../../images/Code-Quiz.png';
+import pizzaImg from '../../images/Pizza-Hunt.png';
+import employeeImg from '../../images/Employee-Manager.png';
+
+import WorkItems from './components/Workitems/Workitems.js';
 
 const items = [
 
