@@ -1,9 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import About from './About';
+import Header from './Header';
+import Projects from './Projects';
+import Navigation from './Navigation';
+import Contact from './Contact';
 
 function App() {
   return (
     <div className="App">
+      <div>Navigation</div>
+      <div>Header</div>
+      <div>Projects</div>
+      <div>Contact</div>
+      <div>Footer</div>
+
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -15,7 +26,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+        
         </a>
       </header>
     </div>
