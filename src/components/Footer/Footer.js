@@ -2,8 +2,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        function Footer() {
-            return (
+                    
               <div className="footer">
                 <div className="my-1">
                   <h4>Email:</h4>
@@ -16,10 +15,9 @@ const Footer = () => {
                
               </div>
             )
-          }
-    );
+    };
        
     
-}
+
 
 export default Footer;

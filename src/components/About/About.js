@@ -1,4 +1,7 @@
 import React from 'react';
+import wayneIMG from '../../assets/images/Wayne-E.jpg';
+
+
 
 const About = () => {
     return (
@@ -19,6 +22,10 @@ const About = () => {
           rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur
           aut perferendis doloribus asperiores repellat."</p>
       </div>
+      <img src={wayneIMG} alt="self" />
+     
+
+      
     </>
   )
 }

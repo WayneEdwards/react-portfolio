@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Home from "./components/Home/Home.js";
 import Navigation from "./components/Navigation/Navigation.js";
 import About from "./components/About/About.js";
 import Projects from "./components/Projects/Projects.js";
@@ -25,6 +26,7 @@ function App() {
         {currentCategory.name === "about me" && <About />}
         {currentCategory.name === "contact" && <ContactForm />}
         {currentCategory.name === "projects" && <Projects />}
+        {currentCategory.name === "home" && <Home />}
       </main>
       <Footer />
     </div>
