@@ -2,13 +2,13 @@
 
 import React from 'react';
 
-import horiseonImg from '../../images/Horiseon.png';
-import budgetImg from '../../images/Budget-App.png';
-import quizImg from '../../images/Code-Quiz.png';
-import pizzaImg from '../../images/Pizza-Hunt.png';
-import employeeImg from '../../images/Employee-Manager.png';
+import horiseonImg from '../../assets/images/Horiseon.png';
+import budgetImg from '../../assets/images/Budget-App.png';
+import quizImg from '../../assets/images/Code-Quiz.png';
+import pizzaImg from '../../assets/images/Pizza-Hunt.png';
+import employeeImg from '../../assets/images/Employee-Manager.png';
 
-import WorkItems from './components/Workitems/Workitems.js';
+import WorkItems from '../Workitems/index';
 
 const items = [
 
@@ -55,11 +55,11 @@ function Projects() {
     <div className="work-right">
       <div className="work-top">
         <div className="work-top-title">
-          <p>Pizza Hunt</p>
+          <p>HowRU</p>
           
         </div>
-        <a href="https://pacific-ridge-26359.herokuapp.com//">
-          <img src={pizzaImg} alt="Pizza Hunt" />
+        <a href="https://howru-meditation.herokuapp.com/">
+          <img src={pizzaImg} alt="howRU" />
         </a>
       </div>
 

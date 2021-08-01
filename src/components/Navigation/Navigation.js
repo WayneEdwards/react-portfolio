@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect }from 'react';
 
 import { capitalizeFirstLetter } from '../../utils/helpers';
 
@@ -17,7 +17,7 @@ function Navigation(props) {
     <header className="flex-row px-1">
       <h2>
         <a data-testid="link" href="/">
-          Luyang Jiang
+          Wayne Edwards
         </a>
       </h2>
       <nav>
