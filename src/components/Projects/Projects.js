@@ -5,7 +5,7 @@ import React from 'react';
 import horiseonImg from '../../assets/images/Horiseon.png';
 import budgetImg from '../../assets/images/Budget-App.png';
 import quizImg from '../../assets/images/Code-Quiz.png';
-import pizzaImg from '../../assets/images/Pizza-Hunt.png';
+import meditateImg from '../../assets/images/HowRU-screenshot.png';
 import employeeImg from '../../assets/images/Employee-Manager.png';
 
 import WorkItems from '../Workitems/index';
@@ -59,7 +59,7 @@ function Projects() {
           
         </div>
         <a href="https://howru-meditation.herokuapp.com/">
-          <img src={pizzaImg} alt="howRU" />
+          <img src={meditateImg} alt="howRU" />
         </a>
       </div>
 

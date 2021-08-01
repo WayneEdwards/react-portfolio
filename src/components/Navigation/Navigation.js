@@ -20,6 +20,7 @@ function Navigation(props) {
           Wayne Edwards
         </a>
       </h2>
+      
       <nav>
         <ul className="flex-row">
           {categories.map((category) => (
